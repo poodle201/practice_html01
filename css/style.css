@@ -1,0 +1,177 @@
+/* PC スマホ共通 */
+body {
+  font-family: "Noto Sans", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+}
+
+main {
+  background-color: #FFFFFF;
+}
+
+header {
+  margin-top: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+#nav-profile-link {
+  display: inline-block;
+  border: solid 1px #000000;
+  padding: 11px 28px 12px 29px;
+}
+
+#nav-about-works a {
+  text-align: center;
+  width: 120px;
+  border: none;
+}
+
+#nav-works {
+  margin-left: 35px;
+}
+
+#img-main {
+  margin: 20px auto 0 auto;
+  max-width: 100%;
+  height: 400px;
+  display: block;
+  object-fit: cover;
+}
+
+#about {
+  width: 100%;
+}
+
+#h1-about {
+  margin-top: 40px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 34px;
+}
+
+#div-about>div {
+  margin-top: -5px;
+}
+
+#img-myself {
+  width: 141px;
+  height: 142px;
+}
+
+#nyname {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 13px 33px;
+}
+
+#nyname+ul {
+  font-size: 18px;
+  margin: 0 0 10px 33px;
+  padding-left: 35px;
+}
+
+.border-radius-50 {
+  border-radius: 50%;
+}
+
+.line-height-11 {
+  line-height: 1.35;
+}
+
+/* rowks */
+
+#h1-works {
+  margin-top: 35px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 34px;
+}
+
+#copyright {
+  font-size: 18px;
+  margin-top: 32px;
+  text-align: center;
+  color: #000000;
+}
+
+/* ----------------------------- */
+/* PC用 */
+/* ----------------------------- */
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 1200px;
+    min-width: 768px;
+    margin: 0 auto 0 auto;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
+
+  #div-about {
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+  }
+
+  /* works */
+  #div-works {
+    display: flex;
+    justify-content: center;
+  }
+
+  #div-works img {
+    width: 179px;
+    height: 134px;
+  }
+
+  #div-works>div {
+    width: 179px;
+    margin: 15px 9px 0 9px;
+  }
+
+  #div-works p {
+    font-size: 18px;
+    margin: 27px 0 0 0;
+    text-align: center;
+    overflow-wrap: break-word;
+  }
+}
+
+/* --------------------------------- */
+/* スマホ用 */
+/* --------------------------------- */
+@media screen and (max-width: 767px) {
+  body {
+    max-width: 767px;
+    min-width: 375px;
+    margin: 0 auto 0 auto;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 20px 0 20px;
+  }
+
+  #div-about {
+    margin: 42px auto 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  #div-works img {
+    width: 100%;
+  }
+
+  #div-works p {
+    text-align: center;
+  }
+}
